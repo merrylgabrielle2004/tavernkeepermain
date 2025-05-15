@@ -1,0 +1,3482 @@
+/* Custom CSS for Tavern Component to match the design */
+
+/* Main Layout */
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Colors */
+.bg-white {
+  background-color: #ffffff;
+}
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Colors and Borders */
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Spacing and Layout */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Map Container */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #f5f5f5;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-items {
+  list-style-type: none;
+}
+
+.menu-items li {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-items li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-items li.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-left: 4px solid white;
+}
+
+.icon {
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-blue-900 {
+  color: #1e3a8a; /* Dark blue for headings and text */
+}
+
+.text-blue-800 {
+  color: #1e40af;
+}
+
+.text-blue-300 {
+  color: #93c5fd;
+}
+
+.bg-amber-200 {
+  background-color: #fde68a; /* Light yellow for highlight boxes */
+}
+
+.bg-gray-300 {
+  background-color: #d1d5db; /* Light gray for boxes */
+}
+
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+
+.border-blue-200 {
+  border-color: #bfdbfe; /* Light blue for circle border */
+}
+
+.border-16 {
+  border-width: 16px;
+}
+
+/* Sidebar */
+.w-40 {
+  width: 10rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.rounded-l-md {
+  border-top-left-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.space-x-2 > * + * {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Search Bar */
+.p-4 {
+  padding: 1rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-y-0 {
+  top: 0;
+  bottom: 0;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.h-5, .w-5 {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.text-gray-400 {
+  color: #9ca3af;
+}
+
+.block {
+  display: block;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.h-8, .w-8 {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.h-2, .w-2 {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.bg-red-500 {
+  background-color: #ef4444;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+/* Main Content */
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+/* Right Panel */
+.w-72 {
+  width: 18rem;
+}
+
+.border-l {
+  border-left-width: 1px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.h-36, .w-36 {
+  height: 9rem;
+  width: 9rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.bg-indigo-800 {
+  background-color: #3730a3;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-x-6 > * + * {
+  margin-left: 1.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.bg-blue-500 {
+  background-color: #3b82f6;
+}
+
+.h-40 {
+  height: 10rem;
+}
+
+/* Additional classes for layout matching the image */
+.border {
+  border-width: 1px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.text-green-600 {
+  color: #059669;
+}
+
+/* Chart colors */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #e5e7eb;
+}
+
+.recharts-tooltip-cursor {
+  stroke: #6b7280;
+}
+
+/* Tavern Cards */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 200px;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.tavern-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.tavern-location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tavern-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level {
+  font-weight: bold;
+  color: #333;
+}
+
+.progress {
+  color: #666;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+
+/* Map pin positioning */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #f5f5f5;
+}
+
+/* Remove the map pin positioning section */
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Remove these classes as they're no longer needed
+.map-pin {
+  position: absolute;
+  bottom: 20%;  
+  left: 20%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.map-pin:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+*/
+
+
+/* Sidebar Styles - Updated to match Dashboard exactly */
+.sidebar {
+  width: 220px;
+  background-color: #966F33;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-container {
+  height: 80px;
+  background-color: #7D5B28;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.menu-title {
+  padding: 15px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,43 @@
+/* Tavern Cards Styles */
+.tavern-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.tavern-card:hover {
+  transform: translateY(-2px);
+}
+
+.tavern-card.active {
+  box-shadow: 0 0 0 3px #fbbf24;
+}
+
+.tavern-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.tavern-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.tavern-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tavern-revenue {
+  font-size: 12px;
+  opacity: 0.9;
+}
