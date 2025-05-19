@@ -50,6 +50,14 @@ const Dashboard = ({ onLogout }) => {
     dateRange: 'June 20 - December 01, 2024'
   };
 
+  const highSpenders = [
+    { name: 'Yor', amount: '$81.00' },
+    { name: 'Franky', amount: '$26.00' },
+    { name: 'Yuri', amount: '$25.00' },
+    { name: 'Fiona', amount: '$24.00' },
+    { name: 'Loid', amount: '$23.00' }
+  ];
+
   return (
     <div className="flex h-screen bg-amber-50">
       {/* Sidebar */}
@@ -77,13 +85,17 @@ const Dashboard = ({ onLogout }) => {
             <span className="icon">📦</span>
             Inventory
           </li>
-          <li onClick={handleLogout}>
+        </ul>
+
+        {/* Logout button at bottom */}
+        <div className="logout-container">
+          <li onClick={handleLogout} className="logout-item">
             <span className="icon">
               <LogOut size={20} />
             </span>
             Logout
           </li>
-        </ul>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -165,6 +177,23 @@ const Dashboard = ({ onLogout }) => {
                 <Line type="monotone" dataKey="prevSales" stroke="#FFC107" />
               </LineChart>
             </ResponsiveContainer>
+          </div>
+
+          {/* High Spender Customers Section */}
+          <div className="card spender-card">
+            <h2>High Spender Customer</h2>
+            <p className="spender-subtitle">mga gastador talaga iyan sila</p>
+            <ul className="customer-list">
+              {highSpenders.map((customer, index) => (
+                <li key={index} className="customer-item">
+                  <div className="customer-avatar">
+                    {customer.name.charAt(0)}
+                  </div>
+                  <span className="customer-name">{customer.name}</span>
+                  <span className="customer-amount">{customer.amount}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Orders Section */}

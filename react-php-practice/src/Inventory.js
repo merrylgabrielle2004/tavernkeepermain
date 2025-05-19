@@ -169,46 +169,78 @@ const Inventory = ({ onLogout }) => {
           <div className="inventory-details">
             <div className="usage-section">
               <h2>Inventory Usage</h2>
-              <p className="subtitle">ITEMS</p>
+              <p className="subtitle">{selectedItem ? selectedItem.type.toUpperCase() : 'ITEMS'}</p>
               {selectedItem && (
-                <div className="usage-bars">
-                  <div className="required-bar" style={{height: '100%'}}>100</div>
-                  <div
-                    className="quantity-bar"
-                    style={{ height: `${selectedItem.quantity}%` }}
-                  >
-                    {selectedItem.quantity}
+                <>
+                  <div className="usage-chart">
+                    <div className="donut-chart">
+                      <svg viewBox="0 0 36 36" className="circular-chart">
+                        <path
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none"
+                          stroke="#eee"
+                          strokeWidth="3"
+                        />
+                        <path
+                          d="M18 2.0845
+                            a 15.9155 15.9155 0 0 1 0 31.831
+                            a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none"
+                          stroke="#966F33"
+                          strokeWidth="3"
+                          strokeDasharray={`${(selectedItem.quantity/selectedItem.required) * 100}, 100`}
+                        />
+                        <text x="18" y="18" textAnchor="middle" dominantBaseline="central" className="percentage">
+                          {selectedItem.quantity}
+                        </text>
+                      </svg>
+                      <div className="chart-label">
+                        <span>Current Stock</span>
+                        <span className="required">Required: {selectedItem.required}</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </>
               )}
-              <div className="usage-legend">
-                <span>Quantity Required</span>
-                <span>Quantity</span>
-              </div>
             </div>
 
             {selectedItem && (
               <div className="details-section">
-                <h2>Details:</h2>
-                <div className="detail-item">
-                  <span>Type:</span>
-                  <span>{selectedItem.type}</span>
-                </div>
-                <div className="detail-item">
-                  <span>Price:</span>
-                  <span>${selectedItem.price.toFixed(2)}</span>
-                </div>
-                <div className="detail-item">
-                  <span>Available:</span>
-                  <span>{selectedItem.available}</span>
-                </div>
-                <div className="detail-item">
-                  <span>Ingredients:</span>
-                  <span>{selectedItem.ingredients}</span>
-                </div>
-                <div className="detail-item">
-                  <span>Supplier:</span>
-                  <span>{selectedItem.supplier}</span>
+                <h2>Item Details</h2>
+                <div className="detail-card">
+                  <div className="detail-header">
+                    <img src={selectedItem.image} alt={selectedItem.name} className="detail-image" />
+                    <div className="detail-title">
+                      <h3>{selectedItem.name}</h3>
+                      <span className="item-id">ID: {selectedItem.id}</span>
+                    </div>
+                  </div>
+                  
+                  <div className="detail-grid">
+                    <div className="detail-item">
+                      <span className="detail-label">Type</span>
+                      <span className="detail-value">{selectedItem.type}</span>
+                    </div>
+                    <div className="detail-item">
+                      <span className="detail-label">Price</span>
+                      <span className="detail-value price">${selectedItem.price.toFixed(2)}</span>
+                    </div>
+                    <div className="detail-item">
+                      <span className="detail-label">Available At</span>
+                      <span className="detail-value location">{selectedItem.available}</span>
+                    </div>
+                    <div className="detail-item">
+                      <span className="detail-label">Supplier</span>
+                      <span className="detail-value supplier">{selectedItem.supplier}</span>
+                    </div>
+                  </div>
+
+                  <div className="ingredients-section">
+                    <h4>Ingredients</h4>
+                    <p>{selectedItem.ingredients}</p>
+                  </div>
                 </div>
               </div>
             )}

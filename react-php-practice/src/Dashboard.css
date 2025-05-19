@@ -23,22 +23,6 @@
   flex-direction: column;
 }
 
-.logo-container {
-  height: 80px;
-  background-color: #7D5B28;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.logo {
-  width: 90%;
-  height: 90%;
-  object-fit: contain;
-  padding: 8px;
-}
-
 .menu-items {
   list-style-type: none;
   padding: 0;
@@ -417,25 +401,41 @@
   flex: 1;
 }
 
+/* CircularProgressbar custom styles */
+.CircularProgressbar {
+  width: 120px;
+  height: 120px;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #7D5B28;
+  stroke-linecap: round;
+}
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #E5E5E5;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #333;
+  font-size: 20px;
+  font-weight: bold;
+  dominant-baseline: middle;
+  text-anchor: middle;
+}
+
+.CircularProgressbar .CircularProgressbar-background {
+  fill: #fff;
+}
+
 .rating-chart {
   width: 120px;
   height: 120px;
   position: relative;
   margin-bottom: 10px;
-}
-
-.circular-chart {
-  width: 100%;
-  height: 100%;
-  transform: rotate(-90deg);
-}
-
-.percentage {
-  fill: #333;
-  font-size: 14px;
-  font-weight: bold;
-  text-anchor: middle;
-  dominant-baseline: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rating-label {
@@ -447,42 +447,54 @@
 
 /* High Spender Customer Card */
 .spender-card {
-  grid-column: 2;
+  margin-top: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.spender-subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .customer-list {
   list-style: none;
   padding: 0;
-  margin-top: 20px;
 }
 
 .customer-item {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #eee;
 }
 
+.customer-item:last-child {
+  border-bottom: none;
+}
+
 .customer-avatar {
-  width: 32px;
-  height: 32px;
-  background-color: #7D5B28;
-  color: white;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
+  object-fit: cover;
+  margin-right: 15px;
 }
 
 .customer-name {
   flex: 1;
+  font-size: 16px;
   color: #333;
 }
 
 .customer-amount {
   font-weight: bold;
   color: #333;
+  font-size: 16px;
 }
 
 /* Order Card */
@@ -563,4 +575,28 @@
   left: 20px;
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
+}
+
+.logout-container {
+  margin-top: auto;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logout-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+}
+
+.logout-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout-item .icon {
+  margin-right: 12px;
 }
